@@ -7,8 +7,8 @@ struct FitnessTrackApp: App {
     init () {
         
         var configuration = ParseConfiguration(
-            applicationId: "CM5CdaXfKTazOQDgqnYjcoD31HuCMnzbEhJLeSJW",
-            clientKey: "fbWwCCVsmf6mt9ufJq4bhpSe4NqidytJ87SWAMSZ",
+            applicationId: "",
+            clientKey: "",
             serverURL: URL(string:"https://parseapi.back4app.com")!
         )
         
