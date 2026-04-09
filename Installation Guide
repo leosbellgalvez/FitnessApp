@@ -1,0 +1,17 @@
+# Macbook or XCode runnable devices required as this is a SwiftUI mobile project. #
+
+1) Upon installing, you will see a folder titled FitnessTrack App.
+2) Open XCode and press "Open Existing Project"
+3) Click "FitnessTrack.xcodeproj" file and press "Trust and Open".
+4) This will open the project with all necessary files.
+5) Keys were removed for security reasons so you will need to get your own.
+6) Open FitnessTrackApp source code file and go to configurations. 
+7) You will see "applicationId" and "clientKey"
+8) Go to https://www.back4app.com and create an account.
+9) Upon account creation, it will invite you to create a backend. Title your backend.
+10) Once it is created you will see the "App Id" and "Client key". Paste it into the code respectively.
+11) Now go to MealPlanGeneratorView and look for the urlString variable.
+12) Go to https://spoonacular.com/food-api, create an account and get your API key.
+13) Replace "APIKEYPLACEHOLDER" with your Spoonacular API key
+14) All necessary keys are required
+15) App usage details will be on the User Manual file.
