@@ -89,7 +89,7 @@ struct MealPlanGeneratorView: View {
         isLoading = true
         
         let timeFrame = planType.lowercased()
-        var urlString = "https://api.spoonacular.com/mealplanner/generate?apiKey=96fa091232bd466785ba88119dd7e8a0&timeFrame=\(timeFrame)&targetCalories=\(targetCalories)"
+        var urlString = "https://api.spoonacular.com/mealplanner/generate?apiKey=INSERTAPIKEYHERE&timeFrame=\(timeFrame)&targetCalories=\(targetCalories)"
         
         
     
