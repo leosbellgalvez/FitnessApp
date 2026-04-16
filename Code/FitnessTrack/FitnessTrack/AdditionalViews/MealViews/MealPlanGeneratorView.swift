@@ -16,7 +16,7 @@ struct MealPlanGeneratorView: View {
     
     
     let planTypes = ["Day", "Week"]
-    let diets = ["None", "Vegetarian", "Vegan", "Gluten Free", "Ketogenic", "Paleo"]
+    let diets = ["None", "Gluten Free"]
     
     
     var body: some View {
