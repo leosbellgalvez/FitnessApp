@@ -20,7 +20,7 @@ struct MealPlanResultView: View {
                     NutrientSummaryView(nutrients: nutrients)
                 }
             } else if let week = mealPlan.week {
-                ForEach(week.sorted(by: { $0.key < $1.key }), id: \.key) { day, dayMeals in
+                ForEach(sortCardsByWeekDay(week), id: \.key) { day, dayMeals in
                     VStack(alignment: .leading, spacing: 10) {
                         Text(formatDay(day))
                             .font(.headline)
@@ -46,5 +46,16 @@ struct MealPlanResultView: View {
             return "Day \(components[1])"
         }
         return day.capitalized
+    }
+
+    func sortCardsByWeekDay(_ week: [String: MealPlanResponse.DayMeals]) -> [(key: String, MealPlanResponse.DayMeals)] {
+        let dayOrder = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
+        
+        return week.sorted { day1, day2 in
+            let index1 = dayOrder.firstIndex(of: day1.key.lowercased()) ?? 999
+            let index2 = dayOrder.firstIndex(of: day2.key.lowercased()) ?? 999
+            return index1 < index2
+        }
+        
     }
 }
